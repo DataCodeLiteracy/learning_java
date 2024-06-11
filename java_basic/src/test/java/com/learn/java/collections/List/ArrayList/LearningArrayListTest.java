@@ -3,6 +3,7 @@ package com.learn.java.collections.List.ArrayList;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,9 +11,7 @@ class LearningArrayListTest {
 
     @Test
     public void newStringArrayListAddTest() {
-        ArrayList<String> stringList = new ArrayList<>(100);
-        LearningArrayList<String> learningArrayList = new LearningArrayList<String>(stringList);
-
+        LearningArrayList<String> learningArrayList = new LearningArrayList<>(100);
         ArrayList<String> arrayList = learningArrayList.getList();
 
         learningArrayList.addElement("Test");
@@ -28,9 +27,7 @@ class LearningArrayListTest {
 
         System.out.println("======================================");
 
-        ArrayList<String> stringList2 = new ArrayList<>();
-        LearningArrayList<String> learningArrayList2 = new LearningArrayList<>(stringList2);
-
+        LearningArrayList<String> learningArrayList2 = new LearningArrayList<>();
         ArrayList<String> arrayList2 = learningArrayList2.getList();
 
         learningArrayList2.addAllElement(arrayList);
