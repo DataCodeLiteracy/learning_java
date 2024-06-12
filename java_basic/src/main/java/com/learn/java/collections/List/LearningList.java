@@ -1,4 +1,4 @@
-package com.learn.java.collections.List.ArrayList;
+package com.learn.java.collections.List;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,5 +24,21 @@ public class LearningList<T> {
 
     public void addAllElement(List<T> otherList) {
         list.addAll(otherList);
+    }
+
+    public int listSize() {
+        return list.size();
+    }
+
+    public T getData(int index) {
+        return list.get(index);
+    }
+
+    public int getIndex(Object object) {
+        return list.indexOf(object);
+    }
+
+    public int getLastIndex(Object object) {
+        return list.lastIndexOf(object);
     }
 }

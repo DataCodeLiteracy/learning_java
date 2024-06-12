@@ -1,5 +1,7 @@
 package com.learn.java.collections.List.ArrayList;
 
+import com.learn.java.collections.List.LearningList;
+
 import java.util.ArrayList;
 
 public class LearningArrayList<T> extends LearningList<T> {
